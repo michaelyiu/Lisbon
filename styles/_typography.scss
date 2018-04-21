@@ -1,0 +1,42 @@
+*{
+    font-family: 'Poppins', sans-serif;
+    // font-family: 'Raleway', sans-serif;
+}
+
+
+.nav__list__list-item{
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: bold;
+}
+
+/*  header fonts */
+header h1{
+    font-family: Raleway;
+    font-size: 44px;
+    font-weight: 800;
+    line-height: 26px;
+}
+header h4{
+    font-size: 22px;
+    font-weight: normal;
+    font-style: italic;
+    line-height: 26px;
+}
+
+header .block .block__header-button{
+    font-family: Raleway;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
+}
+
+@media (max-width: 1500px)
+{
+    header h1{
+        line-height: 44px;
+    }
+}
+
+/*  header fonts */
+

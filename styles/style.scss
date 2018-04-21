@@ -3,3 +3,9 @@
 @import "typography";
 @import "components/header";
 @import "components/footer";
+
+.wrapper{
+    position: relative;
+    max-width: 70%;
+    margin: 0 auto;
+}

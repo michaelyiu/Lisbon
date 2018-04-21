@@ -1,0 +1,144 @@
+.main-header{
+    height: 100vh;
+    background-image: url("../images/main-image.png");
+    background-position: center;
+    background-size: cover;
+    padding-top: 10px;
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+
+        // background: #fff;
+        width: 100%;
+        height: 76px;
+        
+        .img-container{
+            flex-grow: 1;
+            padding-top: 5px;
+        }
+    }
+
+    .separator{
+        margin-top: 40px;
+        height: 4px;
+        border-bottom: rgba(255, 255, 255, 0.22) 1px solid;
+        border-top: rgba(255, 255, 255, 0.22) 1px solid;
+    }
+}
+
+
+nav{
+    padding: 20px;
+    
+    .nav__hamburger{
+        display: none;
+        width: 40px;
+        height: 40px;
+        color: white;
+    }
+
+    .nav__list{
+        list-style: none;
+
+        .nav__list__list-item{
+            display: inline-block;
+            padding: 10px;
+            color: white;
+
+        }
+
+        .search{
+            border-radius: 50%;
+            background-color: #e85889;
+            width: 44px;
+            height: 44px;
+            margin-left: 10px;
+            padding: 12px 0px;
+            font-size: 18px;
+            line-height: 18px;
+
+            text-align: center;
+        }
+    }
+
+}
+
+
+
+.block{
+    color: white;
+    text-align: center;
+    transform: translateY(50%); 
+
+    .block__header-button{
+        background-color: #e85889;
+        border: 1px;
+        border-radius: 5px;
+        color: white;
+        margin-top: 20px;
+        padding: 10px 40px; //good padding
+    }
+
+    .block__paragraph{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+@media (max-width: 1500px)
+{
+
+    nav{
+        .nav__hamburger{
+            display: inline-block;
+            padding: 20px;
+        }
+
+        .nav__list, nav:active .nav__list{
+            display: none;
+            position: absolute;
+            padding: 20px;
+            background: #fff;
+            border: 5px solid #444;
+            right: 0;
+            top: 60px;
+            width: 25%;
+
+            .nav__list__list-item{
+                text-align: center;
+                width: 100%;
+                padding: 10px 0;
+                margin: 0;
+                color: black;
+            }
+        }
+
+        &:hover .nav__list{
+            display: block;
+        }
+    }
+
+
+
+    
+    .nav__list{
+        .nav__list__list-item{
+            // display: block;
+            padding: 0;
+
+        }
+    }
+
+.block{
+        transform: initial;
+
+        .block__paragraph{
+            padding-top: 40px;
+        }
+    }
+    
+}
