@@ -125,7 +125,53 @@ main.events{
         font-weight: 400;
         line-height: 26px;
     }
+
+    .events__desc .events__desc__link{
+        text-decoration: none;
+        color: #e85889;
+        font-size: 16px;
+        font-weight: 600px;
+        font-style: italic;
+        line-height: 26px;
+    }
 }
 
 
 /* main events section */
+
+
+/* join event section*/
+
+section.join-event{
+    h1{
+        margin: 0;
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+
+    p{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    input[type="email"]{
+        color: #ffffff;
+        font-size: 14px;
+        font-weight: 400;
+        line-height: 26px;
+    }
+
+    input[type="button"]{
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 15px;
+        font-weight: 700;
+        line-height: 26px;
+    }
+}
+/* join event section*/
