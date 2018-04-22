@@ -97,10 +97,6 @@ section.conference-countdown{
             text-align: right;
         }
 
-        .flex-container .timer{
-            // flex-grow: 1;
-        }
-
         .section__buttons{
             width: 100%;
         }
@@ -120,7 +116,6 @@ section.conference-countdown{
         .flex-container{
             flex-direction: row;
             justify-content: center;
-            // align-items: center;
         }
         .section__buttons{
             width: 100%;
@@ -129,26 +124,63 @@ section.conference-countdown{
     }
 }
 
-// @media(max-width: 1500px){
-//     section.conference-countdown{
-//         .text{
-//             width: 50%;
-//             // flex-basis: 500px;
-//         }
-//         .flex-container{
-//             .flex-container{
-//                 justify-content: center;
-//             }
-//         }
-//         .timer
-//         {
-//             width: 50%;
-//         }
-//         .section-buttons{
-//             width: 100%;
-//             text-align: right;
-//             // align-self: flex-end;
-//         }
-//         // flex-basis: 1000px;
-//     }
-// }
+
+
+
+main.events{
+    padding: 100px 0;
+    // text-align: initial;
+
+    .events__header,
+    .events__paragraph{
+        text-align: center;
+    }
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+
+        .events__container{
+            width: 30%;
+            .events__desc{
+                text-align: left;
+                box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
+            }
+
+
+            .events__container__img
+            {
+                width: 100%;
+                
+                padding: 0;
+                margin: 0;
+                display: block;
+            }
+            .events__desc{
+                padding: 25px;
+            }
+            img{
+
+                margin: 0;
+                padding: 0;
+                max-height: 100%;
+                max-width: 100%;
+                display: block;
+            }
+
+            .events__desc__header{
+                margin: 0;
+                
+            }
+        }
+    }
+}
+
+
+@media (max-width: 1500px){
+    main.events{
+    
+        
+    }
+}
