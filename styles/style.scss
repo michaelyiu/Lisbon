@@ -9,3 +9,146 @@
     max-width: 70%;
     margin: 0 auto;
 }
+
+
+
+
+.conference-countdown{
+    background-color: #fafafa;
+    box-shadow: 2px 4px 5px 0px rgba(0, 0, 0, 0.03);
+
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+
+
+
+
+
+/* section.conference-countdown fonts  */
+section.conference-countdown{
+    padding: 75px 0;
+    .section__block{
+        // width: 30%;
+        
+        .timer__block{
+            display: inline-block;
+        }
+
+        .timer__separator
+        {
+            margin: 0 10px;
+        }
+
+    }
+    .text{
+        width: 25%;  
+        flex-basis: 280px;
+    }
+
+    
+
+
+
+
+
+    .flex-container{
+        display: flex;
+        flex-wrap: wrap;
+
+        .timer__block{
+            width: 37px;
+            height: 45px;
+
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        .black{
+            background-color: #333333;
+        }
+
+    }
+
+
+
+
+    .section__buttons{
+        text-align: right;
+        input[type="button"]{    
+            background-color: #e85889;
+            border: 1px;
+            border-radius: 5px;
+            color: white;
+            // margin-top: 20px;
+            padding: 10px 40px; //good padding
+        }
+    }
+
+}
+
+
+@media(max-width: 1500px){
+    section.conference-countdown{
+        .flex-container .text{
+            text-align: right;
+        }
+
+        .flex-container .timer{
+            // flex-grow: 1;
+        }
+
+        .section__buttons{
+            width: 100%;
+        }
+    }
+
+}
+
+@media(max-width: 1100px){
+    section.conference-countdown .flex-container{
+        flex-direction: column;
+
+        .text{
+            text-align: center;
+            width: 100%;
+            flex-basis: initial;
+        }
+        .flex-container{
+            flex-direction: row;
+            justify-content: center;
+            // align-items: center;
+        }
+        .section__buttons{
+            width: 100%;
+            text-align: center;
+        }
+    }
+}
+
+// @media(max-width: 1500px){
+//     section.conference-countdown{
+//         .text{
+//             width: 50%;
+//             // flex-basis: 500px;
+//         }
+//         .flex-container{
+//             .flex-container{
+//                 justify-content: center;
+//             }
+//         }
+//         .timer
+//         {
+//             width: 50%;
+//         }
+//         .section-buttons{
+//             width: 100%;
+//             text-align: right;
+//             // align-self: flex-end;
+//         }
+//         // flex-basis: 1000px;
+//     }
+// }

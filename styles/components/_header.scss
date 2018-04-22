@@ -106,7 +106,8 @@ nav{
             border: 5px solid #444;
             right: 0;
             top: 60px;
-            width: 25%;
+            //width: 25%;
+            width: 270px;
 
             .nav__list__list-item{
                 text-align: center;
@@ -134,11 +135,21 @@ nav{
     }
 
 .block{
-        transform: initial;
+    transform: initial;
 
         .block__paragraph{
             padding-top: 40px;
         }
     }
     
+}
+
+
+
+@media (max-height: 1000px){
+    .block{
+        .block__paragraph{
+            display: none;
+        }
+    }
 }
