@@ -143,6 +143,7 @@ main.events{
 
         .events__container{
             width: 30%;
+            max-width: 367px;
             .events__desc{
                 text-align: left;
                 box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.13);
@@ -213,3 +214,24 @@ section.join-event{
     }
 }
 //join event section
+
+
+section.event-speakers{
+    .flex-container{
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .speaker-container{
+        width: 23%;
+        
+
+        img{
+            width: 100%;
+            // display: block;
+            border-top-left-radius: 5px;           
+            border-top-right-radius: 5px;
+        }
+    }
+
+}
