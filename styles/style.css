@@ -347,7 +347,6 @@ p.pricing__sub-header {
   font-family: Raleway;
   color: #ffffff;
   font-size: 13px;
-  /* Approximation due to font substitution */
   font-weight: 500; }
 
 @media (max-width: 1500px) {
@@ -792,6 +791,10 @@ section.pricing {
   .optimal-plan,
   .premium-plan {
     margin: 0 5px; } }
+
+@media (max-width: 1200px) {
+  .price-listing .plan-perks p {
+    display: none; } }
 
 section.pricing-white {
   height: 85vh; }

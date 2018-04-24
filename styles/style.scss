@@ -512,6 +512,21 @@ section.pricing{
         }
 }
 
+@media(max-width:1200px){
+    .price-listing{
+        // height: 40vh;
+        .plan-perks{
+            
+            p{
+                display: none;
+            }
+        }
+    }
+}
+
+
+
+
 section.pricing-white{
     height: 85vh;
 }
