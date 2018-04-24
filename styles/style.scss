@@ -10,6 +10,12 @@
     margin: 0 auto;
 }
 
+@media (max-width: 480px){
+    .wrapper{
+        max-width: 80%;
+    }
+
+}
 
 
 
@@ -40,7 +46,7 @@ section.conference-countdown{
 
         .timer__separator
         {
-            margin: 0 10px;
+            margin: 10px 10px;
         }
 
     }
@@ -48,11 +54,6 @@ section.conference-countdown{
         width: 25%;  
         flex-basis: 280px;
     }
-
-    
-
-
-
 
 
     .flex-container{
@@ -124,6 +125,17 @@ section.conference-countdown{
     }
 }
 
+@media (max-width: 480px){
+    section.conference-countdown{
+        .section__block{
+            margin-top: 20px;
+            .timer__separator{
+                margin: 10px 3px;
+            }   
+        }
+    }
+
+}
 
 
 
@@ -179,12 +191,26 @@ main.events{
 }
 
 
-// @media (max-width: 1500px){
-//     main.events{
-    
-        
-//     }
-// }
+
+@media (max-width: 768px){
+    main.events{
+        .flex-container{
+            .events__container{
+                width: 100%;
+                margin: 0 auto;
+                margin-top: 50px;    //not sure if good practice, but for clarity..
+            }
+        }
+    }
+}
+
+@media (max-width: 480px){
+    main.events{
+        h2.events__header{
+            line-height: 42px;
+        }
+    }
+}
 
 
 
@@ -217,21 +243,278 @@ section.join-event{
 
 
 section.event-speakers{
+    text-align: center;
+    padding: 100px 0;
+    .dark-circle-1{
+        top: 60%;               
+        left: 20%;
+    }
+    .dark-circle-2{
+        top: 60%;                
+        left: 45%;
+    }
+    .dark-circle-3{
+        top: 60%;                
+        left: 70%;
+    }
+
     .flex-container{
         display: flex;
         justify-content: space-between;
+        flex-wrap: wrap;
     }
 
     .speaker-container{
-        width: 23%;
-        
+        position: relative;
+        // width: 23%;
+        margin: 10px;
+        // padding: 10px;
+        // margin-
+
+        &:hover{
+            .dark-circle{
+                display: block;
+                position: absolute;
+
+            }
+            .profile{
+                background-color: #463f8c;
+                h4.nametag{
+                    color: white;
+                }
+                p.titletag{
+                    color: #a6a0e3;
+                }
+            }
+        }
 
         img{
-            width: 100%;
-            // display: block;
+            max-width: 100%;
+
+            display: block;
             border-top-left-radius: 5px;           
             border-top-right-radius: 5px;
+            margin: 0;
+            padding: 0;
         }
+
+        .fa-google-plus-g,
+        .fa-twitter,
+        .fa-facebook-f{
+            margin: 0;
+            padding: 0;
+        }
+
+        .profile{
+            padding: 20px 10px;
+
+            h4{
+                padding: 0;
+                margin: 0;
+            }
+            p{
+                padding: 0;
+                margin: 0;
+
+            }
+            text-align: center;
+            box-shadow: 2px 4px 18px 0px rgba(0, 0, 0, 0.03);
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+        }
+
+
+
     }
 
+
+    .dark-circle{
+            display: none;
+            // display: inline-block;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.55);
+            width: 34px;
+            height: 34px;
+            padding: 2px 0px;
+            font-size: 14px;
+            // margin-bottom: 7px;
+            line-height: 34px;
+
+            text-align: center;
+
+            color: white;
+
+            &:hover{
+                    background-color: #e85889;
+            }
+    }
+
+
+
+
+
+    .flex-dots{
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .dots{
+        border-radius: 50%;
+        background-color: #463f8c;
+        width: 11px;
+        height: 11px;
+        margin: 3px;
+    }
+
+    a:target{
+        border: 1px solid #e85889;
+        border-radius: 50%;
+    }
+    a:target > div{
+        background-color: #e85889;
+        margin: 1px;
+    }
+    
+
 }
+
+
+@media(max-width: 1600px){
+    section.event-speakers{
+        .flex-container{
+            justify-content: space-around;
+        }
+    }
+}
+
+@media(max-width: 768px){
+    section.event-speakers{
+        .flex-dots{
+            display: none;
+        }
+    }
+}
+
+
+
+
+
+// Pricing sections
+section.pricing{
+        
+
+    padding-top: 100px;
+    background: url("../images/pricing-image.png");
+    height: 75vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+
+    .price-listing{
+        margin-top: 100px;
+        padding: 30px;
+
+        box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
+        background-color: white;
+        width: 100%;
+        height: 80vh;
+
+        
+    }
+
+    .flex-plans{
+        display: flex;
+        width: 100%; height: 100%;
+
+        .basic-plan,
+        .optimal-plan,
+        .premium-plan{
+            position: relative;
+            border: 1px solid #ececec;
+            background-color: #fafafa;
+            width: 33%;
+            margin: 0 20px;
+            padding: 50px 0;
+            // padding: 50px;
+            height: 100%;
+
+            
+            .plan-perks input[type="button"]
+            {
+                position: absolute;
+                left: 25%;
+                bottom: 50px;
+            }
+
+        }
+        .basic-plan{
+            margin-left: 5px;
+        }
+        .premium-plan{
+            margin-right: 5px;
+        }
+
+        .optimal-plan{
+            position: relative;
+            #trapezoid {
+                border-bottom: 45px solid #463f8c;
+                border-left: 45px solid transparent;
+                border-right: 45px solid transparent;
+                height: 0;
+                width: 160px;
+                color: white;
+                transform: rotate(45deg);
+
+                position: absolute;
+                right: -40px;
+                top: 18px;
+            p{
+                // transform: rotate(180deg);
+                width: 100%;
+                text-align: center;
+                margin: 0 -40px 0 0;
+                padding: 0;
+            }
+        }
+        }
+
+        .plan-perks {
+            p{
+                margin: 0;
+                border-top: 1px dashed #e0e0e0;
+                padding: 10px 50px;
+            }
+
+            input[type="button"]{
+                background-color: #e85889;
+                border: 1px solid #e85889;
+                border-radius: 5px;
+                padding: 15px 20px;
+                color: white;
+                // margin: 0 auto;
+            }
+        }
+
+    }
+}
+
+
+
+@media(max-width: 1500px){
+        .basic-plan,
+        .optimal-plan,
+        .premium-plan{
+            margin: 0 5px;
+        }
+}
+
+section.pricing-white{
+    height: 85vh;
+}
+
+
+// Pricing sections

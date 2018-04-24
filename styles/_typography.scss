@@ -175,3 +175,132 @@ section.join-event{
     }
 }
 /* join event section*/
+
+
+// event speakers section
+
+.event-speakers{
+    h1{
+        font-family: Raleway;
+        color: #222222;
+        font-size: 36px;
+        font-weight: 800;
+        line-height: 26px;
+    }
+    p.section-paragraph{
+        color: #777777;
+        font-size: 17px;
+        font-style: italic;
+        line-height: 26px;
+    }
+
+    .profile{
+        h4.nametag{
+            font-family: Raleway;
+            color: #222222;
+            font-size: 16px;
+            font-weight: 600;
+            line-height: 22px;
+            margin: 0;
+            padding: 0;
+        }
+        p.titletag{
+            color: #777777;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 22px;
+        }
+    }
+}
+
+// event speakers section
+
+
+//pricing section
+h1.pricing__header{
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 26px;
+}
+
+p.pricing__sub-header{
+    color: #ffffff;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 26px;
+}
+
+.price-listing{
+    .plan-name{
+        font-family: Raleway;
+        color: #222222;
+        font-size: 20px;
+        font-weight: 500;
+        line-height: 26px;
+        margin: 0;
+    }
+
+    .plan-desc{
+        color: #777777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+        margin-top: 10px;
+        padding: 0;
+    }
+
+    .plan-price{
+        color: #222222;
+        font-size: 36px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    .monthly{
+        color: #777777;
+        font-size: 14px;
+        font-weight: 300;
+        line-height: 26px;
+    }
+
+    .dollar{
+        color: #222222;
+        font-size: 40px;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .plan-perks{
+        text-align: left;
+        p{
+            font-family: OpenSans;
+            color: #777777;
+            font-size: 15px;
+            font-weight: 400;
+            line-height: 38px;
+        }
+    }
+
+    #trapezoid p{
+        font-family: Raleway;
+        color: #ffffff;
+        font-size: 13px;/* Approximation due to font substitution */
+        font-weight: 500;
+        // line-height: 26px;
+    }
+}
+
+
+@media(max-width:1500px){
+    .price-listing{
+        .plan-perks{
+            p{
+                line-height: 22px;
+            }
+        }
+    }
+}
+//needs breakpoint work
+//pricing section
