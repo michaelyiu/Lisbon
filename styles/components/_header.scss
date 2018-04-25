@@ -1,9 +1,11 @@
 .main-header{
+    position: relative;
     height: 100vh;
     background-image: url("../images/main-image.png");
     background-position: center;
     background-size: cover;
     padding-top: 10px;
+    
     .flex-container{
         display: flex;
         flex-wrap: wrap;
@@ -25,6 +27,34 @@
         border-bottom: rgba(255, 255, 255, 0.22) 1px solid;
         border-top: rgba(255, 255, 255, 0.22) 1px solid;
     }
+
+
+
+
+    .panel{
+        position: absolute;
+        background-color: rgba(255, 255, 255, 0.28);
+        width: 33px;
+        height: 93px;
+        top: 50%;
+        transition: 0.3s color ease-in-out;
+        p{
+            text-align: center;
+            padding-top: 18px;
+        }
+        &:hover{
+            color: #e85889;
+        }
+
+    }
+    .left-panel{
+        left: 0;
+    }
+    .right-panel{
+        right: 0;
+    }
+
+
 }
 
 
@@ -84,6 +114,8 @@ nav{
         font-size: 30px;
     }
 }
+
+
 
 
 

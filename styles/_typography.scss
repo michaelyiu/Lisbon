@@ -1,6 +1,36 @@
 *{
     font-family: 'Poppins', sans-serif;
-    // font-family: 'Raleway', sans-serif;
+}
+
+.events h1, .join-event h1, 
+.event-speakers h1, .pricing h1, 
+.schedule h1, .news h1{
+    font-family: Raleway;
+    color: #222222;
+    font-size: 36px;
+    font-weight: 800;
+    line-height: 26px;
+    text-align: center;
+}
+
+p.events__subheader, p.event-speakers__subheader, 
+p.pricing__subheader, p.news__subheader{
+    color: #777777;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 26px;
+    text-align: center;
+}
+
+
+
+
+input[type="button"]{
+    font-family: Raleway;
+    color: #ffffff;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 26px;
 }
 
 
@@ -24,13 +54,6 @@ header h4{
     line-height: 26px;
 }
 
-header .block .block__header-button{
-    font-family: Raleway;
-    font-size: 15px;
-    font-weight: 700;
-    line-height: 26px;
-}
-
 @media (max-width: 1500px)
 {
     header h1{
@@ -47,9 +70,8 @@ header .block .block__header-button{
 /*  header fonts */
 
 
-
-
-/* section.conference-countdown fonts  */
+////////////////////////////////////////
+/* section.conference-countdown fonts */
 section.conference-countdown{
     h3{
         font-family: Raleway;
@@ -69,7 +91,6 @@ section.conference-countdown{
         padding: 0;
     }
 
-
     .flex-container{
         .section__block{
             .black{
@@ -80,44 +101,23 @@ section.conference-countdown{
             }
         }
     }
-
-
-
     
     .timer__block__label{
         font-family: Raleway;
         color: #777777;
-        font-size: 15px;/* Approximation due to font substitution */
+        font-size: 15px;
         font-weight: 400;
         line-height: 26px;       
     }
-
 }
 
+/* section.conference-countdown fonts */
+////////////////////////////////////////
 
-
-/* section.conference-countdown fonts  */
-
-
-
+/////////////////////////
 /* main events section */
 
 main.events{
-    // text-align: center;
-    h2.events__header{
-        font-family: Raleway;
-        color: #222222;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 26px;
-        
-    }
-    p.events__paragraph{
-        color: #777777;
-        font-size: 17px;
-        font-style: italic;
-        line-height: 26px;
-    }
 
     p.events__desc__paragraph{
         color: #777777;
@@ -136,20 +136,18 @@ main.events{
     }
 }
 
-
 /* main events section */
+////////////////////////
 
-
+///////////////////////
 /* join event section*/
 
 section.join-event{
+
     h1{
         margin: 0;
-        font-family: Raleway;
         color: #ffffff;
-        font-size: 36px;
         font-weight: 700;
-        line-height: 26px;
     }
 
     p{
@@ -165,34 +163,14 @@ section.join-event{
         font-weight: 400;
         line-height: 26px;
     }
-
-    input[type="button"]{
-        font-family: Raleway;
-        color: #ffffff;
-        font-size: 15px;
-        font-weight: 700;
-        line-height: 26px;
-    }
 }
 /* join event section*/
+///////////////////////
 
 
-// event speakers section
-
+////////////////////////////
+/* event speakers section */
 .event-speakers{
-    h1{
-        font-family: Raleway;
-        color: #222222;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 26px;
-    }
-    p.section-paragraph{
-        color: #777777;
-        font-size: 17px;
-        font-style: italic;
-        line-height: 26px;
-    }
 
     .profile{
         h4.nametag{
@@ -212,24 +190,14 @@ section.join-event{
         }
     }
 }
+/* event speakers section */
+////////////////////////////
 
-// event speakers section
 
-
-//pricing section
-h1.pricing__header{
-    font-family: Raleway;
+////////////////////
+/*pricing section */
+h1.pricing__header, p.pricing__subheader{
     color: #ffffff;
-    font-size: 36px;
-    font-weight: 800;
-    line-height: 26px;
-}
-
-p.pricing__sub-header{
-    color: #ffffff;
-    font-size: 17px;
-    font-style: italic;
-    line-height: 26px;
 }
 
 .price-listing{
@@ -293,36 +261,20 @@ p.pricing__sub-header{
 
 
 @media(max-width:1500px){
-    .price-listing{
-        .plan-perks{
-            p{
-                line-height: 22px;
-            }
-        }
+    .price-listing .plan-perks p{
+        line-height: 22px;
     }
+    
 }
+/*pricing section */
+////////////////////
 
-
-//needs breakpoint work
-//pricing section
-
-
-
-
-
-
-//schedule section
+/////////////////////
+/*schedule section */
 section.schedule{
     text-align: center;
-    h1.section-header{
-        font-family: Raleway;
-        color: #222222;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 26px
-    }
 
-    h1.section-desc{
+    p.schedule__subheader{
         color: #777777;
         font-size: 17px;
         font-style: italic;
@@ -374,19 +326,14 @@ section.schedule{
             font-weight: 400;
             line-height: 24px;
         }
-
-    }
-    
+    }   
 }
+/*schedule section */
+/////////////////////
 
 
-
-//schedule section
-
-
-
-//quotes sections
-
+////////////////////
+/*quotes sections */
 section.quotes{
 
     h1.header-quote{
@@ -403,42 +350,48 @@ section.quotes{
             line-height: 28px;
         }
     }
+
     h3.quote-content{
         color: #bfb9f6;
         font-size: 17px;
         font-style: italic;
         line-height: 28px;
-
-        
     }
+
     p.quoter-name{
         color:  #fafafa;
         font-size: 18px;
         font-weight: 600;
         line-height: 28px;
     }
+
     span.quoter-title{
         color: #bfb9f6;
         font-size: 17px;
         font-style: italic;
         line-height: 28px;
     }
-
 }
-//quotes sections
 
-//news sections
 
-section.news{
-    h1.section-header{
-        font-family: Raleway;
-        color: #222222;
-        font-size: 36px;
-        font-weight: 800;
-        line-height: 26px;
+@media(max-width: 640px){
+    section.quotes{
+        h1.header-quote{
+            font-size: 24px;
+        }
+        h3.quote-content{
+            font-size: 14px;
+            line-height: 24px;
+        }
     }
+}
+/* quotes sections */
+/////////////////////
 
 
+///////////////////
+/* news sections */
+section.news{
     h2.news-header{
         font-family: Raleway;
         color: #222222;
@@ -454,21 +407,10 @@ section.news{
         line-height: 26px;
     }
 
-
-    
-
-
     p.news-desc{
         color: #777777;
         font-size: 14px;
         font-weight: 400;
-        line-height: 26px;
-    }
-
-    input[type="button"]{
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 600;
         line-height: 26px;
     }
 
@@ -478,24 +420,15 @@ section.news{
         font-size: 18px;
         font-weight: 400;
         line-height: 26px;
-
     }
-    
 }
+/* news sections */
+///////////////////
 
-
-
-
-
-
-//news sections
-
-
-
-//subscribe to newsletter section
-
+///////////////////////////////
+/* subscribe to news section */
 section.newsletter{
-    h1.section-header{
+    h1.newsletter__header{
         margin-top: 0;
         font-family: Raleway;
         color: #222222;
@@ -510,56 +443,39 @@ section.newsletter{
         font-weight: 400;
         line-height: 28px;
     }
-
-    input[type="button"]
-    {
-        color: #ffffff;
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 28px;
-    }
-
 }
-
-//subscribe to newsletter section
-
-
+/* subscribe to news section */
+///////////////////////////////
 
 
-//contact us section
+////////////////////////
+/* contact us section */
 section.contact-us{
-
-        .fa-map-marker-alt,
+    .fa-map-marker-alt,
     .fa-mobile-alt,
     .fa-envelope{
-        // width: 150%;
         width: 30px;
         height: 20px;
-        // font-size: 25px;
     }
     color: #ababab;
     font-size: 14px;
     font-weight: 400;
     line-height: 28px;
 }
-//contact us section
+/*contact us section */
+///////////////////////
 
-
-//footer section
+////////////////////
+/* footer section */
 footer{
-
-    
-
     color: #ababab;
     font-size: 14px;
     font-weight: 500;
     line-height: 28px;
 
-    //hover for 
     ul li:hover{
         color: white;
     }
-
 
     .copyright{
         color: #ffffff;
@@ -575,5 +491,5 @@ footer{
         line-height: 28px;
     }
 }
-//footer section
-
+/* footer section */
+////////////////////
