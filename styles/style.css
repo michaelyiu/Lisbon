@@ -557,7 +557,7 @@ nav {
       -o-transition: 0.3s color ease-in-out;
       transition: 0.3s color ease-in-out; }
       nav .nav__list .nav__list__list-item:hover {
-        color: #e85889; }
+        color: #eb2366; }
     nav .nav__list .search {
       border-radius: 50%;
       background-color: #e85889;
@@ -587,9 +587,11 @@ nav {
   nav .nav__list, nav nav:active .nav__list {
     display: none;
     position: absolute;
-    padding: 20px;
-    background: #fff;
+    margin: 0;
+    padding: 0;
+    background: rgba(255, 255, 255, 0.8);
     border: 5px solid #444;
+    border-radius: 5px;
     right: 0;
     top: 60px;
     width: 270px; }
@@ -598,7 +600,14 @@ nav {
       width: 100%;
       padding: 10px 0;
       margin: 0;
-      color: black; }
+      color: black;
+      -webkit-transition: 0.15s all ease-in-out;
+      -o-transition: 0.15s all ease-in-out;
+      transition: 0.15s all ease-in-out; }
+      nav .nav__list .nav__list__list-item:hover, nav nav:active .nav__list .nav__list__list-item:hover {
+        background: rgba(255, 105, 180, 0.8); }
+    nav .nav__list .search, nav nav:active .nav__list .search {
+      background-color: #fff; }
   nav:hover .nav__list {
     display: block; }
   .nav__list .nav__list__list-item {
@@ -1155,14 +1164,47 @@ section.schedule {
     -ms-flex-direction: column;
     flex-direction: column;
     border: none; }
+    section.schedule .event-guests .borderMaskTop, section.schedule .event-guests .borderMaskBottom {
+      display: none; }
     section.schedule .event-guests .speaker-container {
-      position: initial;
       width: 80%; }
       section.schedule .event-guests .speaker-container:before {
         content: none;
         border: none; }
     section.schedule .event-guests .profile-info {
       text-align: center; } }
+
+@media (max-width: 1100px) {
+  section.schedule .flex-content {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    section.schedule .flex-content .flex-schedule-block {
+      width: 100%;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      section.schedule .flex-content .flex-schedule-block .day {
+        width: 25%; }
+    section.schedule .flex-content .event-guests .speaker-container,
+    section.schedule .flex-content .event-guests .profile-info {
+      width: 100%; }
+    section.schedule .flex-content .event-guests .speaker-container {
+      margin-top: 20px; }
+    section.schedule .flex-content .event-guests .profile-info {
+      margin-top: 0;
+      text-align: left;
+      margin-bottom: 40px; } }
 
 /* End of schedule section styles */
 /* quotes section styles */
