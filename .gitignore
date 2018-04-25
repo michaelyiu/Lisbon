@@ -1,7 +1,4 @@
 .DS_Store
 *.psd
-*.png
-*.jpg
 *.txt
-styles/styles.css
 *.config

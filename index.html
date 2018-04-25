@@ -11,6 +11,8 @@
 
 </head>
 <body>
+
+    <!-- Start of Header -->
     <header class="main-header">
         <div class="wrapper">
             <div class="flex-container">
@@ -21,7 +23,7 @@
                     <div class="nav__hamburger">
                         <i class="fas fa-bars"></i>
                     </div>
-    
+                    
                     <ul class="nav__list">
                         <li class="nav__list__list-item">HOME</li>
                         <li class="nav__list__list-item">ABOUT US</li>
@@ -35,6 +37,7 @@
                             <i class="fas fa-search"></i>
                         </li>
                     </ul>
+
                 </nav>
             </div>
 
@@ -47,10 +50,9 @@
                 <h1>LEAD TO YOUR CAREER</h1>
                 <input class="block__header-button" type="button" value="BUY TICKETS">
             </div>
-
-            
-
         </div>
+
+        <!-- left/right panels -->
         <div class="panel right-panel">
             <p>
                 <i class="fas fa-angle-right"></i>
@@ -62,9 +64,10 @@
             </p>
         </div>
     </header>
+    <!-- End of Header -->
 
 
-
+    <!-- Start of conference countdown section -->
     <section class="conference-countdown">
         <div class="wrapper">
             <div class="flex-container">
@@ -72,6 +75,7 @@
                     <h5>26-29 AUGUST 2017, BERLIN</h5>
                     <h3>INTERNATIONAL CONFERENCE IN 2017</h3>
                 </div>
+                <!-- timer container -->
                 <div class="section__block timer flex-container">
                     <div class="timer__block__days">
                         <div class="timer__block black">1</div>
@@ -90,25 +94,27 @@
                         <div class="timer__block black">2</div>
                         <div class="timer__block black">8</div>
                         <div class="timer__block__label">Minutes</div>
-
                     </div>
                     <div class="timer__separator">:</div>
                     <div class="timer__block__seconds">
                         <div class="timer__block black">1</div>
                         <div class="timer__block black">5</div>
                         <div class="timer__block__label">Seconds</div>
-
                     </div>
                 </div>
+                <!-- End of timer container -->
+
                 <div class="section__block section__buttons">
                     <input type="button" value="BUY TICKET">
                     <input type="button" value="SEE DETAILS">
                 </div>
             </div>
         </div>
-
     </section>
+    <!-- Start of conference countdown section -->
 
+
+    <!-- Start of Main events -->
     <main class="events">
         <div class="wrapper">
             <h1 class="events__header">ABOUT THIS EVENTS</h1>
@@ -149,12 +155,12 @@
                         <a href="#" class="events__desc__link">Read More</a>
                     </div>
                 </div>
-                
             </div>
         </div>
     </main>
+    <!-- End of Main events -->
 
-
+    <!-- Start of Join Us section -->
     <section class="join-event">
         <div class="wrapper">
             <h1 class="join__header">JOIN OUR EVENT</h1>
@@ -162,9 +168,10 @@
             <input type="email" name="Email" id="subscription" placeholder="Your Email..." /><input type="button" value="SUBSCRIBE" />
         </div>
     </section>
+    <!-- End of Join Us section -->
+    
 
-
-
+    <!-- Start of Event Speakers section -->
     <section class="event-speakers">
         <div class="wrapper">
             <h1>OUR EVENT SPEAKERS</h1>
@@ -172,14 +179,17 @@
 
             <hr>
 
+            <!-- flexbox on all 4 speaker boxes -->
             <div class="flex-container">
                 <div class="speaker-container">
                     <img src="images/speaker-1.png" alt="">
+                    <!-- three social media image circles on the profile photo -->
                     <div class="speaker-container__sm">
                         <div class="gplus dark-circle dark-circle-1"><i class="fab fa-google-plus-g"></i></div>
                         <div class="twitter dark-circle dark-circle-2"><i class="fab fa-twitter"></i></div>
                         <div class="fb dark-circle dark-circle-3"><i class="fab fa-facebook-f"></i></div>
                     </div>
+                    <!-- The bottom little handle for each image -->
                     <div class="profile">
                         <h4 class="nametag">Ashley Warner</h4>
                         <p class="titletag">CEO, Hatem Co.</p>
@@ -249,9 +259,10 @@
             </div>
         </div>
     </section>
+    <!-- End of Event Speakers section -->
 
 
-
+    <!-- Start of pricing section -->
     <section class="pricing">
         <div class="wrapper">
             <h1 class="pricing__header">OUR PRICING</h1>
@@ -260,6 +271,7 @@
             <hr>
 
             <div class="price-listing">
+                <!-- flexbox for the three plans -->
                 <div class="flex-plans">
                     <div class="basic-plan">
                         <h2 class="plan-name">Basic Plan</h2>
@@ -273,8 +285,9 @@
                             <input type="button" value="SEE DETAILS">
                         </div>
                     </div>
+                    <!-- best choice trapezoid banner thingy on the optimal plan container -->
                     <div class="optimal-plan">
-                    <div id="trapezoid"><p>Best Choice</p></div>
+                        <div id="trapezoid"><p>Best Choice</p></div>
                         
                         <h2 class="plan-name">Optimal Plan</h2>
                         <p class="plan-desc">Standard Pricing Plan</p>
@@ -303,19 +316,18 @@
                             <p>Regular Seat &amp; Accomodation</p>
                             <p>Free Coffee &amp; Lunch</p>
                             <p>Free Entrance Materials</p>
-                            <!-- <div class="force-center"> -->
-                                <input type="button" value="SEE DETAILS">
-                            <!-- </div> -->
+                            <input type="button" value="SEE DETAILS">
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     </section>
-    <section class="pricing-white">
+    <section class="pricing-white"></section>
+    <!-- End of pricing section -->
 
-    </section>
+
+    <!-- Start of schedule section -->
     <section class="schedule">
         <div class="wrapper">
             <h1 class="schedule__header">EVENT SCHEDULE</h1>
@@ -323,66 +335,67 @@
             
             <hr>
             
-                <div class="flex-content">
-                    <div class="flex-schedule-block">
-                        <div class="day first-day">
-                            <p class="date">April 21</p>
-                            <p class="numbered-day">First Day</p>
-                        </div>
-                        <div class="day second-day">
-                            <p class="date">April 22</p>
-                            <p class="numbered-day">Second Day</p>
-                        </div>
-                        <div class="day third-day">
-                            <p class="date">April 24</p>
-                            <p class="numbered-day">Third Day</p>
-                        </div>
-                        <div class="day fourth-day">
-                            <p class="date">April 25</p>
-                            <p class="numbered-day">Fourth Day</p>
-                        </div>
+            <div class="flex-content">
+                <div class="flex-schedule-block">
+                    <div class="day first-day">
+                        <p class="date">April 21</p>
+                        <p class="numbered-day">First Day</p>
                     </div>
-
-                    <div class="event-guests">
-                        <!-- <div class="left-border"></div> -->
-
-                        
-                        <div class="speaker-container">
-                            <div class="borderMaskTop"></div>
-                            <div class="speaker scheduled-speaker-1"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="speaker-name">David Johnson</h4>
-                            <p class="scheduled-time">10AM - 12PM</p>
-                            <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
-                            <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
-                        </div>
-                        <div class="speaker-container">
-                            <div class="speaker scheduled-speaker-2"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="speaker-name">David Johnson</h4>
-                            <p class="scheduled-time">10AM - 12PM</p>
-                            <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
-                            <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
-                        </div>
-
-                        <div class="speaker-container">
-                            <div class="borderMaskBottom"></div>
-                            <div class="speaker scheduled-speaker-3"></div>
-                        </div>
-                        <div class="profile-info">
-                            <h4 class="speaker-name">David Johnson</h4>
-                            <p class="scheduled-time">10AM - 12PM</p>
-                            <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
-                            <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
-                        </div>
+                    <div class="day second-day">
+                        <p class="date">April 22</p>
+                        <p class="numbered-day">Second Day</p>
+                    </div>
+                    <div class="day third-day">
+                        <p class="date">April 24</p>
+                        <p class="numbered-day">Third Day</p>
+                    </div>
+                    <div class="day fourth-day">
+                        <p class="date">April 25</p>
+                        <p class="numbered-day">Fourth Day</p>
                     </div>
                 </div>
+
+
+                <div class="event-guests">
+                    <!-- first item to incorporate dashed border -->
+                    <div class="speaker-container">
+                        <div class="borderMaskTop"></div>
+                        <div class="speaker scheduled-speaker-1"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h4 class="speaker-name">David Johnson</h4>
+                        <p class="scheduled-time">10AM - 12PM</p>
+                        <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
+                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
+                    </div>
+                    <div class="speaker-container">
+                        <div class="speaker scheduled-speaker-2"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h4 class="speaker-name">David Johnson</h4>
+                        <p class="scheduled-time">10AM - 12PM</p>
+                        <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
+                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
+                    </div>
+                    <!-- Last item to incorporate dashed border -->
+                    <div class="speaker-container">
+                        <div class="borderMaskBottom"></div>
+                        <div class="speaker scheduled-speaker-3"></div>
+                    </div>
+                    <div class="profile-info">
+                        <h4 class="speaker-name">David Johnson</h4>
+                        <p class="scheduled-time">10AM - 12PM</p>
+                        <h3>Interfaces Holisticly predominate extensible testing procedures</h3>
+                        <p>Consectetur adipisicing elit. Quod distinctio impedit sint accusantium ducimis lites consequuntur innobisl dolores saepe. Proin sit amet turpis lobortis imperdiet nisiut, vivierra lorem</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
+    <!-- End of schedule section -->
 
 
+    <!-- Start of quotes section -->
     <section class="quotes">
         <div class="wrapper">
             <div class="content">
@@ -392,18 +405,20 @@
                     <div class="quoter quoter3"></div>
                     <div class="quoter quoter4"></div>
                 </div>
-                <div class="double-quote">
-                    
-                </div>
+
+                <div class="double-quote"></div>
+
                 <div class="quoteblock">
                     <h1 class="header-quote">In case you needed something fun and pointless</h1>
                     <h3 class="quote-content">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus ut quidem quaerat. Dignissimos iste, voluptates vero quo labore repudiandae numquam perspiciatis! Suscipit est accusantium necessitatibus quo magni porro perspiciatis iste?</h3>
-
                     <p class="quoter-name">David Warner <span class="quoter-title">- Artist</span></p>
                 </div>
             </div>
         </div>
     </section>
+    <!-- End of quotes section -->
+
+    <!-- Start of news section -->
     <section class="news">
         <div class="wrapper">
             <h1 class="news__header">LATEST NEWS</h1>
@@ -413,19 +428,16 @@
             
             <div class="news-section-content">
                 <div class="blog-content1">
-                        <div class="blog-image1">
-                        </div>
-                        <div class="blog-desc1">
-                            <h2 class="news-header">River stumbles as lights</h2>
-                            <p class="news-author">By David Warner on 25 Apr 2017</p>
-                            <hr>
-                            <p class="news-desc">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                            <input type="button" value="READ MORE">
-                        </div>
+                    <div class="blog-image1">
+                    </div>
+                    <div class="blog-desc1">
+                        <h2 class="news-header">River stumbles as lights</h2>
+                        <p class="news-author">By David Warner on 25 Apr 2017</p>
+                        <hr>
+                        <p class="news-desc">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
+                        <input type="button" value="READ MORE">
+                    </div>
 
-                    <!-- <div class="blog-desc3">
-                        fgasd
-                    </div> -->
 
                     <div class="blog-desc blog-desc3">
                         <h2 class="news-header">River stumbles as lights</h2>
@@ -434,9 +446,9 @@
                         <hr>
                     
                         <p class="news-desc">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                    
                         <input type="button" value="READ MORE">
                     </div>
+                    
                     <div class="facebook-box">
                         <div class="blue-half">
                             <p><i class="fas fa-link"></i></p>
@@ -444,12 +456,9 @@
                         </div>
                         <div class="grey-half"></div>
                     </div>
-
-
                 </div>
                 <div class="blog-content blog-content2">
                     <div class="blog-image2">
-                    
                     </div>
                     <div class="blog-desc2">
                         <h2 class="news-header">River stumbles as lights</h2>
@@ -458,32 +467,26 @@
                         <hr>
                         
                         <p class="news-desc">Interfaces Holisticly predominate elitslate extensible testing procedures.</p>
-                        
                         <input type="button" value="READ MORE">
                     </div>
                 </div>
-                
             </div>     
-
-
         </div>
-
-
     </section>
+    <!-- End of news section -->
 
 
-
+    <!-- Start of newsletter section -->
     <section class="newsletter">
         <h1 class="newsletter__header">Sign Up For Our Newsletter</h1>
 
         <input type="email" name="Email" id="subscription" placeholder="Your Email..." />
         <input type="button" value="SUBSCRIBE" />
     </section>
+    <!-- End of newsletter section -->
+    
 
-
-
-
-
+    <!-- Start of contact us section -->
     <section class="contact-us">
         <div class="wrapper">
             <div class="flex-contacts">
@@ -516,15 +519,14 @@
             </div>
         </div>
     </section>
+    <!-- End of contact us section -->
+    
 
-
-
+    <!-- Start of Footer -->
     <footer>
         <div class="wrapper">
             <div id="triangle"><p><i class="fas fa-angle-up"></i></p></div>
-            <!-- <h2>footer woo</h2> -->
             <img src="images/logo.png" alt="">
-            <!-- <div class="footer-logo"></div> -->
             <nav class="footer-nav">
                 <ul>
                     <li>HOME</li>
@@ -541,8 +543,7 @@
             </div>            
         </div>
     </footer>
-
-
+    <!-- End of Footer -->
 
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
 </body>

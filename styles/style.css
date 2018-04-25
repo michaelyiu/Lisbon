@@ -610,6 +610,42 @@ nav {
   .block .block__paragraph {
     display: none; } }
 
+footer {
+  background-color: #100f0f;
+  width: 100vw;
+  max-width: 100%;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 75px;
+  position: relative; }
+
+#triangle {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: -70px;
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 22px solid #100f0f;
+  -webkit-transition: color 1s ease-in-out;
+  -o-transition: color 1s ease-in-out;
+  transition: color 1s ease-in-out; }
+  #triangle:hover {
+    color: red; }
+  #triangle p {
+    text-align: center;
+    margin: 0;
+    position: relative;
+    left: -5px; }
+
+.footer-nav li {
+  display: inline-block;
+  list-style: none;
+  margin: 0px 15px; }
+
 /* general styles */
 hr {
   width: 15%;
@@ -1332,38 +1368,3 @@ section.contact-us {
     width: 90%; } }
 
 /* contact us section */
-footer {
-  background-color: #100f0f;
-  width: 100vw;
-  max-width: 100%;
-  text-align: center;
-  padding-top: 50px;
-  padding-bottom: 75px;
-  position: relative; }
-
-#triangle {
-  position: absolute;
-  margin: auto;
-  left: 0;
-  right: 0;
-  top: -70px;
-  width: 0;
-  height: 0;
-  border-left: 20px solid transparent;
-  border-right: 20px solid transparent;
-  border-bottom: 22px solid #100f0f;
-  -webkit-transition: color 1s ease-in-out;
-  -o-transition: color 1s ease-in-out;
-  transition: color 1s ease-in-out; }
-  #triangle:hover {
-    color: red; }
-  #triangle p {
-    text-align: center;
-    margin: 0;
-    position: relative;
-    left: -5px; }
-
-.footer-nav li {
-  display: inline-block;
-  list-style: none;
-  margin: 0px 15px; }
