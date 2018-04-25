@@ -190,6 +190,12 @@ section.join-event{
         }
     }
 }
+
+@media(max-width: 480px){
+    section.event-speakers h1{
+        line-height: 30px;
+    }
+}
 /* event speakers section */
 ////////////////////////////
 

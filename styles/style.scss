@@ -27,6 +27,11 @@ input[type="button"]{
     border-radius: 5px;
     color: white;
     padding: 10px 40px; //good padding
+    transition: 0.3s background-color ease-in-out;
+    
+        &:hover{
+            background-color: green;
+        }
 }
 /* general styles */
 
@@ -131,6 +136,12 @@ section.conference-countdown{
 /* main event section styles */
 main.events{
     padding: 100px 0;
+    .events__desc__link{
+        transition: 0.3s color ease-in-out;
+        &:hover{
+            color: blue;
+        }
+    }
 
     .events__header, .events__subheader{
         text-align: center;
@@ -382,7 +393,7 @@ section.pricing{
         box-shadow: 2px 4px 16px 0px rgba(0, 0, 0, 0.04);
         background-color: white;
         width: 100%;
-        height: 80vh;
+        // height: 80vh;
     }
 
     .flex-plans{
@@ -469,8 +480,9 @@ section.pricing-white{
 
 @media(max-width:1200px){
     section.pricing{
+        
         .price-listing{
-            height: 50vh;
+            // height: 50vh;
             .plan-perks  p{
                 display: none;
             }
@@ -478,37 +490,72 @@ section.pricing-white{
     }
 
     section.pricing-white{
-        height: 40vh;
+        // height: 40vh;
     }
 }
 
-@media(max-width:768px){
-    section.pricing{
+// @media(max-width:768px){
+//     section.pricing{
+//         height: initial;
 
-        .plan-desc{
-            display: none;
-        }
-        .price-listing{
-            width: 85vw;
-            margin: 0 -10%;
-        }
+//         .plan-desc{
+//             display: none;
+//         }
+//         .price-listing{
+//             // width: 85vw;
+//             margin: 0 -10%;
+//         }
         
+//         .flex-plans{
+//             .optimal-plan, .basic-plan, .premium-plan{
+//                 position: relative;
+//                 input[type="button"]{
+//                     position: absolute;
+//                     bottom: 0;
+//                     left: 0;
+//                     right: 0;
+//                 }
+//             }
+//             .optimal-plan{
+//                 #trapezoid {
+//                     border-bottom: 35px solid #463f8c;
+//                     border-left: none;
+//                     border-right: none;
+//                     width: 130px;
+//                     transform: rotate(0);
+//                     right: 0px;
+//                     left: 0px;
+//                     top: 0px;
+//                     p{
+//                         margin-top: 7px;
+//                         padding: 0;
+//                     }
+//                 }
+//             }
+//         }
+//     }
+// }
+
+@media(max-width: 768px){
+    section.pricing{
+        height: initial;
+        padding-bottom: 50px;        
+
+        .price-listing{
+            margin: 50px auto;
+        }
+
         .flex-plans{
-            .optimal-plan, .basic-plan, .premium-plan{
-                position: relative;
-                input[type="button"]{
-                    position: absolute;
-                    bottom: 0;
-                    left: 0;
-                    right: 0;
-                }
-            }
+            flex-direction: column;
+            align-items: center;
+
             .optimal-plan{
                 #trapezoid {
                     border-bottom: 35px solid #463f8c;
                     border-left: none;
                     border-right: none;
-                    width: 130px;
+                    // width: 130px;
+                    width: 100%;
                     transform: rotate(0);
                     right: 0px;
                     left: 0px;
@@ -519,9 +566,25 @@ section.pricing-white{
                     }
                 }
             }
+
+            .basic-plan, .premium-plan, .optimal-plan{
+                width: 90%;
+                margin: 20px 0;
+                min-height: 250px;
+                input[type="button"]{
+                    bottom: 5%;
+                }
+            }
         }
     }
+
+    section.pricing-white{
+        // height: 100vh;
+        display: none;
+    }
 }
+
+
 /* End of Pricing sections */
 /////////////////////////////
 
@@ -552,7 +615,7 @@ section.schedule{
             border: 1px solid #ececec;
             padding: 30px;
             text-align: left;
-
+            transition: 0.3s all ease-in-out;
             &:hover{
                 background-color: #e85889;
             }
@@ -638,8 +701,10 @@ section.schedule{
             margin: 35px auto;
             width: 94px;
             height: 94px;
+            transition: 0.3s all ease-in-out;
 
             &:hover{
+                transform: scale(1.05);
                 box-shadow: 0 0 0 7px #ececec;
             }
         }
@@ -709,8 +774,10 @@ section.quotes{
         background-size: cover;
         width: 46px;
         height: 46px;
-   
+        transition: 0.3s all ease-in-out;
+
         &:hover{
+            transform: scale(1.05);
             box-shadow: 0 0 0 7px #ececec;
         }
     }
@@ -913,6 +980,13 @@ section.contact-us{
         background-color: #2f2f2f;
         text-align: center;
         line-height: 60px;
+        transition: 0.3s all ease-in-out;
+
+        &:hover{
+            background-color: #4f4f4f;
+            transform: scale(1.05);
+            color: #e85889;
+        }
     }
 
     .contacts-address,
