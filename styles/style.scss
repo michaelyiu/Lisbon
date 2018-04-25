@@ -229,6 +229,16 @@ section.join-event{
         padding: 15px 20px;
     }
 }
+
+@media(max-width: 768px){
+    section.join-event{
+        input[type="button"]{
+            margin-top: 20px;    
+        }
+    }
+
+}
+
 /*End of join event section */
 //////////////////////////////
 
@@ -700,6 +710,7 @@ section.schedule{
                 // align-items: center;
                 justify-content: center;
                 .day{
+                    padding: 15px;
                     width: 25%;
                 }
             }

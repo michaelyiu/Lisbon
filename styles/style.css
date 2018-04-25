@@ -823,6 +823,10 @@ section.join-event {
   section.join-event input[type="button"] {
     padding: 15px 20px; }
 
+@media (max-width: 768px) {
+  section.join-event input[type="button"] {
+    margin-top: 20px; } }
+
 /*End of join event section */
 /* Event speakers section */
 section.event-speakers {
@@ -1195,6 +1199,7 @@ section.schedule {
       -ms-flex-pack: center;
       justify-content: center; }
       section.schedule .flex-content .flex-schedule-block .day {
+        padding: 15px;
         width: 25%; }
     section.schedule .flex-content .event-guests .speaker-container,
     section.schedule .flex-content .event-guests .profile-info {
